@@ -3,12 +3,12 @@ import pandas as pd
 import json
 
 role_to_assume_arn = {
-    "test": "arn:aws:iam::1111111111:role/admin-role",
+    "test": "arn:aws:iam::111111111111:role/admin-role",
     "dev": "arn:aws:iam::111111111111:role/admin-role",
 }
 
 # CSV 파일에서 ARN 및 태그 읽기
-csv_file_path = "test.csv"  # 본인의 CSV 파일 경로로 바꾸세요
+csv_file_path = "test.csv"
 df = pd.read_csv(csv_file_path)
 
 # 리전 리스트
